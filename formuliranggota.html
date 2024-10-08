@@ -16,6 +16,86 @@
             color: black;
         }
         /* Additional styles can be added here */
+            body {
+            background-color:#FF8C00; /*warna dark orange*/
+            coler: black: /*warna teks default */
+            font-family:"Times New ROMAN", Times,serif: /* Mengatir font menjadi Times New Roman*/
+        }
+        h1, h2, h3, h4, h5, h6 {
+            color: black;
+        }
+        p {
+            color: black;
+        }
+        /* Additional styles can be added here */
+            table {
+            border-collapse: collapse;
+            width: 100%;
+        }
+        table, th, td {
+            border: 1px solid black;
+        }
+        th, td {
+            padding: 8px;
+            text-align: center;
+            font-family: Times New Roman, Times, serif; /* Mengatur font di tabel */
+        }
+        button, input[type="submit"] {
+            background-color: #28a745; /* Warna hijau tombol */
+            color: white;
+            border: none;
+            padding: 10px 20px;
+            cursor: pointer;
+            font-family: Times New Roman, Times, serif; /* Mengatur font pada tombol */
+        }
+        button:hover, input[type="submit"]:hover {
+            background-color: #218838; /* Warna hijau tombol saat hover */
+        }
+        img {
+            max-width: 100%; /* Agar gambar tidak melebihi lebar container */
+            height: auto; /* Mempertahankan rasio aspek gambar */
+        }
+        iframe {
+            display: block;
+            margin: 0 auto; /* Memusatkan iframe */
+        }
+        /* tambahkan CSS untuk dropdown */
+        .dropdown {
+            position: relative;
+            display: inline-block;
+        }
+        .dropdown-content {
+            display: none;
+            position: absolute;
+            background-color: #f9f9f9;
+            min-width: 160px;
+            box-shadow: 0px 8px 16px 0px rgba(37, 231, 205, 0.2);
+            z-index: 1;
+        }
+        .dropdown-content a {
+            color: black;
+            padding: 12px 16px;
+            text-decoration: none;
+            display: block;
+        }
+        .dropdown-content a:hover {background-color: #1093bb}
+        .dropdown:hover .dropdown-content {
+            display: block;
+        }
+        .dropdown:hover .dropbtn {
+            background-color: #3e8e41;
+        }
+        .dropbtn {
+            background-color: #4CAF50;
+            color: rgb(3, 63, 45);
+            padding: 16px;
+            font-size: 16px;
+            border: none;
+            cursor: pointer;
+        }
+        .dropbtn:hover {
+            background-color: #3e8e41;
+        }
     </style>
 </head>
 <body>
