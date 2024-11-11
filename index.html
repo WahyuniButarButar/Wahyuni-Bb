@@ -8,8 +8,8 @@
 </head>
     <style>
         body {
-            background-color:#FF8C00; /warna dark orange/
-            color: black;;/*warna teks default */
+            background-color:#FF8C00;
+            color: black;/*warna teks default */
             font-family:"Times New ROMAN", serif; /* Mengatir font menjadi Times New Roman*/
         }
         h1, h2, h3, h4, h5, h6 {
@@ -101,7 +101,7 @@
         }
 
         .book {
-            min-width: 20%;
+            min-width: 40%;
             box-shadow: 0 4px 8px rgba(0,0,0,0.2);
             margin: 0 10px;
             padding: 20px;
@@ -157,7 +157,7 @@
           <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
             <li><a class="dropdown-item" href="formuliranggota.html">Formulir Anggota</a></li>
             <li><a class="dropdown-item" href="Tabelbahanbuku.html">Tabel Bahan Buku</a></li>
-            <li><a class="dropdown-item" href="Formulirpemesananbuku.html">Pememsanan Buku</a></li>
+            <li><a class="dropdown-item" href="Formulirpemesananbuku.html">Pemesanan Buku</a></li>
               <li><a class="dropdown-item" href="Formulirperpanjangan.html">Perpanjangan Buku</a></li>
               <li><a class="dropdown-item" href="dghdye.html">pameran</a></li>
           </ul>
@@ -239,25 +239,22 @@
 
 <script>
     let slider = document.getElementById('bookSlider');
-    let scrollAmount = 0;
-    let bookWidth = slider.querySelector('.book').offsetWidth;
+        let scrollAmount = 0;
 
-    function slideRight() {
-        const maxScroll = slider.scrollWidth - slider.clientWidth;
-        if (scrollAmount < maxScroll) {
-            scrollAmount += bookWidth + 20; // 20 untuk margin
-            if (scrollAmount > maxScroll) scrollAmount = maxScroll;
-            slider.style.transform = translateX(-${scrollAmount}px);
+        function slideRight() {
+            const maxScroll = slider.scrollWidth - slider.clientWidth;
+            if (scrollAmount < maxScroll) {
+                scrollAmount += slider.querySelector('.book').clientWidth + 20;
+                slider.style.transform = translateX(-${scrollAmount}px);
+            }
         }
-    }
 
-    function slideLeft() {
-        if (scrollAmount > 0) {
-            scrollAmount -= bookWidth + 20; // 20 untuk margin
-            if (scrollAmount < 0) scrollAmount = 0;
-            slider.style.transform = translateX(-${scrollAmount}px);
+        function slideLeft() {
+            if (scrollAmount > 0) {
+                scrollAmount -= slider.querySelector('.book').clientWidth + 20;
+                slider.style.transform = translateX(-${scrollAmount}px);
+            }
         }
-    }
     alert("Selamat datang di Perpustakaan Universitas Lampung!");
 
 document.getElementById("welcome").innerHTML="PERPUSTAKAAN UNIVERSITAS LAMPUNG"
