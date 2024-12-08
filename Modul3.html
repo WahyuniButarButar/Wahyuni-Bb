@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Perpustakaan Universitas Syiah Kualah</title>
+    
+    <!-- Internal Style Sheet -->
+    <style>
+        /* Internal CSS: Mengatur gaya untuk paragraf */
+        p.html-paragraph {
+            color: blue;
+            font-size: 20px;
+            text-align: center;
+        }
+
+        p.css-paragraph {
+            color: green;
+            font-size: 18px;
+            text-align: center;
+        }
+    </style>
+    
+    <!-- External Style Sheet (dalam file terpisah) -->
+    <link rel="stylesheet" href="styles.css"> <!-- Menghubungkan ke file CSS eksternal -->
+</head>
+<body>
+    <!-- Inline CSS -->
+    <p style="color: blue; font-size: 20px; text-align: center;">
+        HTML adalah singkatan dari HyperText Markup Language, yang digunakan untuk membuat struktur dasar halaman web. HTML terdiri dari elemen-elemen seperti tag pembuka dan penutup yang digunakan untuk menandai bagian-bagian dari halaman web.
+    </p>
+
+    <!-- Paragraf dengan Internal CSS -->
+    <p class="html-paragraph">
+        HTML adalah singkatan dari HyperText Markup Language, yang digunakan untuk membuat struktur dasar halaman web. HTML terdiri dari elemen-elemen seperti tag pembuka dan penutup yang digunakan untuk menandai bagian-bagian dari halaman web.
+    </p>
+
+    <!-- Paragraf dengan Internal CSS -->
+    <p class="css-paragraph">
+        CSS, atau Cascading Style Sheets, adalah bahasa yang digunakan untuk mendesain dan mengatur tampilan halaman web. CSS memungkinkan kita untuk memisahkan konten dan desain halaman web, membuatnya lebih mudah untuk dikelola dan dipelihara.
+    </p>
+
+    <!-- Formulir Pemesanan Buku -->
+    <h2 style="text-align: center; color: darkorange;">Formulir Pemesanan Buku</h2>
+    <p style="font-size: 20px; text-align: center;">Isi formulir ini untuk memesan buku.</p>
+    
+    <form action="#" method="post">
+        <table style="margin: 0 auto; border: 1px solid black;">
+            <tr>
+                <td>Nama Lengkap:</td>
+                <td><input type="text" name="name" /></td>
+            </tr>
+            <tr>
+                <td>Nomor Anggota:</td>
+                <td><input type="password" name="member_id" /></td>
+            </tr>
+            <tr>
+                <td>e-mail:</td>
+                <td><input type="email" name="email" placeholder="@gmail.com" /></td>
+            </tr>
+            <tr>
+                <td>Nomor Telepon:</td>
+                <td><input type="number" name="phone" placeholder="+62..." /></td>
+            </tr>
+            <tr>
+                <td>Jenis Kelamin:</td>
+                <td>
+                    <label><input type="radio" name="gender" value="male" /> Laki-laki</label>
+                    <label><input type="radio" name="gender" value="female" /> Perempuan</label>
+                </td>
+            </tr>
+            <tr>
+                <th colspan="2" style="text-align: center;">Detail Pemesanan</th>
+            </tr>
+            <tr>
+                <td>Judul Buku yang Dipesan:</td>
+                <td><input type="text" name="book_title" /></td>
+            </tr>
+            <tr>
+                <td>Penulis Buku:</td>
+                <td><input type="text" name="book_author" /></td>
+            </tr>
+            <tr>
+                <td>Nomor ISBN:</td>
+                <td><input type="number" name="isbn" /></td>
+            </tr>
+            <tr>
+                <td>Tanggal Pemesanan:</td>
+                <td><input type="date" name="order_date" /></td>
+            </tr>
+            <tr>
+                <td colspan="2" style="text-align: center;">
+                    <input type="submit" value="Kirim" />
+                </td>
+            </tr>
+        </table>
+    </form>
+</body>
+</html>
